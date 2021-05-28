@@ -1,0 +1,74 @@
+
+body{
+    display:flex;
+    margin: 0px;
+}
+
+
+.background-blur{
+    width: 100%;
+    height: 630px;
+
+ /* asignó la imagen de fondo*/
+ background-image: url(/img/interior-casa-indonesia.png);
+
+ /*Para centrar la imagen vertical y horizontal  */
+ background-position: center center;   
+ 
+ /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+ background-attachment: fixed;
+
+ /*aplicamos COVER en el tamanyo para que la imagen se escale al mayor tamaño posible. */
+ background-size: cover;
+
+ /* aplicamos el filtro blur para difuminar o desenfocar la imagen de fondo*/
+ filter: blur(10px);
+ /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+ background-color: #e7ba3f;
+    
+
+   
+}
+
+.contenedor{
+    width: 100%;
+    height: 530px;
+    margin: 10px;
+    /*display: flex nos permite que la imagen se coloque sobre el background-blur*/
+    display:flex;
+    /*sentar la imagen en la mita del background*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.contenedor > .marcoImagen{
+    display: contents;
+}
+.contenedor > .marcoImagen > img{
+    max-width: 103%;
+    max-height: 103%;
+    min-width: 50%;
+    min-height: 50%;
+    position: absolute;
+}
+
+.contenedor > .img-casa{
+    display: contents;
+}
+
+.contenedor > .img-casa > img{
+
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 90%;
+    max-height: 98.7%;
+    border-bottom-left-radius: 66px 316px;
+    border-bottom-right-radius: 82px 224px;
+    border-top-left-radius: 78px 71px;
+    border-top-right-radius: 95px 50px;
+   
+    position: absolute;
+}
+
+
