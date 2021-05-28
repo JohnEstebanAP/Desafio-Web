@@ -108,6 +108,32 @@ body{
     height: 21%;
 }
 
+#caja4{
+    width: 300px;
+    height: 80px;
+
+    padding: 5px;
+    margin:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fbb125;
+    background-blend-mode: luminosity;
+    border: 2px solid #c87406;
+    border-radius: 30px;
+    box-shadow: 0px 25px 20px 0px #ffc65b inset;
+
+
+    border-bottom-left-radius: 70px 70px;
+    border-bottom-right-radius: 70px 70px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+
+    position: relative;
+    filter:opacity(95%)
+}
+
 h3{
     font-family:'Times New Roman', Times, serif;
     font-style: italic;
