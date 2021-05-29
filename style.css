@@ -9,7 +9,7 @@ body{
 
 .background-blur{
     width: 100%;
-    height: 650px;
+    height: 900px;
 
  /* asignó la imagen de fondo*/
  background-image: url(/img/interior-casa-indonesia.png);
@@ -55,8 +55,8 @@ body{
     height: 98%;
     padding:0px;
     margin: 10px;
-    border-bottom-left-radius: 56px 293px;
-    border-bottom-right-radius: 70px 170px;
+    border-bottom-left-radius: 46px 517px;
+    border-bottom-right-radius: 72px 292px;
     border-top-left-radius: 100px 55px;
     border-top-right-radius: 100px 50px;
    
@@ -71,14 +71,133 @@ body{
     margin: 0px;   
     position: absolute;
 }
+#imgMarcoBlur{
+
+    width: 82%;
+    height: 102%;
+    padding: 0px;
+    margin: 0px;   
+    position: absolute;
+   filter: blur(10px);
+}
+
 
 .contenedor > .contenedor-img-casa > .cajas{
-    width: 200px;
-    height: 100px;
+    width: 260px;
+    height: 14%;
+
+    /*text-align: center;*/
+
+    padding: 5px;
+    margin:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: #fbb125;
-    background-blend-mode: luminosity;
     border: 2px solid #c87406;
-    border-radius: 21px;
+    border-radius: 30px;
     box-shadow: 0px 25px 20px 0px #ffc65b inset;
+
     position: relative;
+    filter:opacity(95%)
 }
+#caja1{
+    top:90px;
+    left:-100px;
+}
+
+#caja2{
+    height: 21%;
+    top:-20%;
+    left:55%;
+}
+
+#caja3{
+    /*Posición de el botón*/
+    top:-55%;
+    left:85%;
+}
+
+#caja4{
+    width: 300px;
+    height: 70px;
+
+    /*Posición de el botón*/
+    top: 30%;
+    left:35%;
+
+    background-color: #4fbcdb;
+    border: 2px solid #59ccec;
+    box-shadow: 0px 25px 20px 0px #c3e6f1 inset;
+
+    padding: 10px;
+    margin:10px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+
+    border-bottom-left-radius: 70px 70px;
+    border-bottom-right-radius: 70px 70px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+
+    position:relative;
+}
+
+h3{
+    font-family:'Bookman Old Style';
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 21px;
+}
+
+.contenedor > .contenedor-img-casa > .button{
+
+        background-color: Transparent;
+        font-size: 150px;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        filter:opacity(0%);
+        position:relative;
+}
+
+#button1{
+    width: 290px;
+    height: 25%;
+
+    bottom: 79%;
+    right: 7%;
+
+}
+
+
+#button2{
+    width: 280px;
+    height: 30%;
+
+    bottom: 91%;
+    left: 32%;
+    
+}
+
+#button3{
+    width: 280px;
+    height: 25%;
+
+    bottom: 100%;
+    left: 36.8%;
+}
+
+
+#button4{
+    width: 350px;
+    height: 25%;
+
+    bottom: 20%;
+    left: 35%;
+}
+
