@@ -17,8 +17,8 @@ body{
  /*Para centrar la imagen vertical y horizontal  */
  background-position: center center;   
  
- /* La imagen se fija en la ventana de visualización para que la 
- altura de la imagen no supere a la del contenido */
+ /* La imagen se fija en la ventana de visualización para que la
+  altura de la imagen no supere a la del contenido */
  background-attachment: fixed;
 
  /*aplicamos COVER en el tamanyo para que la imagen se escale al mayor tamaño posible. */
@@ -26,13 +26,14 @@ body{
 
  /* aplicamos el filtro blur para difuminar o desenfocar la imagen de fondo*/
  filter: blur(10px);
- /* Se muestra un color de fondo mientras se está cargando la imagen 
- de fondo o si hay problemas para cargarla */
+ /* Se muestra un color de fondo mientras se está cargando 
+ la imagen de fondo o si hay problemas para cargarla */
  background-color: #fce4a1;
 }
 
+
 /*contenedor que contiene la imagen y el marco de esta. 
-    En este contenedor se almacenará todas los etiquetas relacionadas a este bloque.*/  
+En este contenedor se almacenará todas los etiquetas relacionadas a este bloque.*/ 
 .contenedor{
     width: 100%;
     height: 530px;
@@ -54,17 +55,31 @@ body{
     position:initial;
 }
 
+
+#titulo2{
+    padding: 10px;
+    margin:10px;
+    display:contents;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+h1,h2{
+    
+    font-family:'Bookman Old Style';
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 35px;
+}
+
 #imgCasa{
 
     width: 80%;
     height: 98%;
     padding:0px;
-    margin: 10px;
-    border-bottom-left-radius: 46px 517px;
-    border-bottom-right-radius: 72px 292px;
-    border-top-left-radius: 100px 55px;
-    border-top-right-radius: 100px 50px;
-   
+    margin: 10px;  
     position: absolute;
 }
 
@@ -76,6 +91,7 @@ body{
     margin: 0px;   
     position: absolute;
 }
+
 #imgMarcoBlur{
 
     width: 82%;
@@ -85,6 +101,7 @@ body{
     position: absolute;
    filter: blur(10px);
 }
+
 
 /*Le Damos estilos a las cajas creadas las cuales también actuaran como Botones*/
 /*Esta es una case global para aplicar el mismo estilo a todas la cajas*/
@@ -120,7 +137,7 @@ body{
 }
 
 #caja3{
-    /*Posición de el botón*/
+    /*Posición de la caja*/
     top:-55%;
     left:85%;
 }
@@ -129,7 +146,7 @@ body{
     width: 300px;
     height: 70px;
 
-    /*Posición de el botón*/
+    /*Posición de la caja*/
     top: 30%;
     left:35%;
 
@@ -157,7 +174,6 @@ h3{
     font-variant: small-caps;
     font-size: 21px;
 }
-
 
 
 /*Aplicamos estilos para los Botones transparentes*/
@@ -201,13 +217,3 @@ h3{
     bottom: 100%;
     left: 36.8%;
 }
-
-
-#button4{
-    width: 350px;
-    height: 25%;
-
-    bottom: 20%;
-    left: 35%;
-}
-
